@@ -163,7 +163,7 @@ function MyNavbar() {
                      </Link >
                    
                      <Link  href="/contact">
-                        <a className = "nav__menu__item m-2   btn btn-outline-danger border-0 btn-sm px-4 text-white ">Contact</a>
+                        <a className = "nav__menu__item m-2   btn btn-outline-danger border-0 btn-sm px-4 text-white ">Contact Us</a>
                      </Link >
 
                    
