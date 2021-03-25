@@ -12,7 +12,7 @@ function Footer() {
       
             <div className="footer__container w-100">
 
-            <div className="container ">
+            <div className="container">
             { router.pathname === "/contact"? null : 
             
             <div className="row g-2 container ">

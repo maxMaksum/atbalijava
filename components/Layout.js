@@ -3,9 +3,7 @@ import MyNavbar from "./MyNavbar";
 
 function Layout({children}) {
     return (
-          <div>
-
-               
+          <div>   
            <div className="layout">
                 <MyNavbar className="navbar"/>
                 <div className="top-60">

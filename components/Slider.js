@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay  } from 'swiper';
 import SwiperCore from "swiper"
 import 'swiper/swiper-bundle.css';
-import { FaMaxcdn } from 'react-icons/fa';
+
 
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay ]);
@@ -73,13 +73,13 @@ const data = [
 
     return (
         
-        <div className =" container-main">
-        <div className="swiper__container">
+        <div className ="container-main">
+       
             <Swiper
                     spaceBetween={100}
                  
                     slidesPerView={1}
-                    navigation 
+                    
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
                     onSlideChange={() => console.log('slide change')}
@@ -88,9 +88,11 @@ const data = [
                     { newData.map(user=>(
 
                     <SwiperSlide key={user.id}>
-                   <div className="">
-                   <div className="card bg-dark text-white" >
-                        <img className="img-fluid"src={user.image}/>
+                   
+                   <div className="text-white card text-left" >
+                        <img className="card-img-top w-100 m-0 p-0" src={user.image}/>
+                    
+                       
 
                         <div className="card-img-overlay ">
                             <h5 className="card-title">{user.caption}</h5>
@@ -99,7 +101,7 @@ const data = [
                         </div>
                         </div>
                        
-                     </div>
+                   
                     </SwiperSlide>
                     ))}
 
@@ -107,7 +109,7 @@ const data = [
 
                 
                 </Swiper>
-                </div>
+              
 
             <style jsx>
                 {`
@@ -117,6 +119,26 @@ const data = [
                         width:14rem;
                       
                     }
+                .card__container{
+                   
+                    width:100%:
+                }
+
+                .img-container{
+                    height:100%;
+                    width:100%;
+                }
+
+                .image__size{
+                    width: 100%;
+                    height: 100%;
+                    object-fit:cover;
+                    object-position:center;
+                    background-size: 100%;
+
+
+                }
+                
 
                
                 }

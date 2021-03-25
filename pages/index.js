@@ -44,11 +44,9 @@ function handleOnSearch({ currentTarget }){
         <Head>
 
         </Head>
-       <div className="">
+      
           <Slider/>
-       </div>
-
-     
+    <div className="container-fluid">
             <div className="header__search d-flex justify-content-center  container mx-auto py-20">
                   <input
                       className ="header__searchInput w-75 border border-light"
@@ -61,7 +59,7 @@ function handleOnSearch({ currentTarget }){
                   </div>
             </div>
 
-       <div className="row ">
+       <div className="row">
      
       {ProductResults.map(product=>(
        
@@ -69,7 +67,7 @@ function handleOnSearch({ currentTarget }){
        <div key={product.id} className="col col-sm-6  col-md-6 col-lg-4 ">
        
           
-        <div className="p-2 m-2 card__container card">
+        <div className="container">
              <Products_Slider productImage={product.images} />
        
            <div className="product__info py-1 text-center card-body ">
@@ -92,7 +90,7 @@ function handleOnSearch({ currentTarget }){
 
       </div>
      
-      
+      </div>
 <style jsx>{`
 
   .header__search{
