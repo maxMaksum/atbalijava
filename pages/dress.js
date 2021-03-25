@@ -8,7 +8,7 @@ export const getStaticProps = async()=>{
 
     const newDress= await client.collection.fetchWithProducts("Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2MTQ5NjE0NDA4MQ==")
 
-    if(!newDress) return "no products"
+  
   
     return {
       props: {

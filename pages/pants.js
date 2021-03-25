@@ -7,7 +7,7 @@ import Link from 'next/link'
 export const getStaticProps = async()=>{
    
     const newPants= await client.collection.fetchWithProducts("Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2MTQ5NjY2ODM2OQ==")
-    if(!newPant) return "no products"
+   
     return {
       props: {
         pants: JSON.parse(JSON.stringify(newPants)),
@@ -16,7 +16,7 @@ export const getStaticProps = async()=>{
   }
 
 function pants({pants}) {
-  if(!newPant) return "no products"
+
 
     return (
       
