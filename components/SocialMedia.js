@@ -3,13 +3,13 @@ import {FaEnvelope,FaWhatsapp, FaPhoneAlt, FaFacebookF} from 'react-icons/fa';
 import Link from 'next/link'
 function SocialMedia() {
     return (
-        <div className="container card">
+        <div className="card card__img container">
 
             <h4 className="card-title text-center fw-bold p-2 ">Contact Us</h4>
 
-            <div className="card-text p-2 ">
+            <div className="card-text">
               <Link href="https://wa.me/6281246951065">
-                <a className="text fa-5x  mx-1 px-1 d-block">
+                <a className="text d-block">
                   <FaWhatsapp size={20} />
                   <span>  WhatsApp </span>
                  
@@ -17,7 +17,7 @@ function SocialMedia() {
               </Link>
 
               <Link href="#">
-                <a className="text m-2 px-1 d-block">
+                <a className="text d-block">
                   <FaFacebookF size={20} />
                   <span> Facebook </span>
                 </a>
@@ -37,6 +37,16 @@ function SocialMedia() {
                 </a>
               </Link>
             </div>
+
+
+          <style jsx>{`
+          .card__img{
+            height:200px;
+            width:100%;
+            object-fit:contain
+          }
+          `}
+      </style>
           </div>
 
     )

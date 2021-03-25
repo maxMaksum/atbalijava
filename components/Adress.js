@@ -4,8 +4,8 @@ import React from 'react'
 
 function Adress() {
   return (
-    <div className="container card p-2">
-      <div>
+    <div className="">
+      <div className="card card__img container">
       <h4 className="card-title text-center fw-bold "> Adress </h4>
         <p className="card-title text-center fw-bold "> Office in Java </p>
 
@@ -15,7 +15,14 @@ function Adress() {
         </p>
       </div>
 
-    
+      <style jsx>{`
+          .card__img{
+            height:200px;
+            width:100%;
+            object-fit:contain
+          }
+          `}
+      </style>
 
        
 

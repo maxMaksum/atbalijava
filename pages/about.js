@@ -6,19 +6,6 @@ function about() {
     return (
       <div className="container-main">
         <Slider />
-        {/* <div className="card">
-          <div className="card bg-dark text-white">
-            <img src="/Young.jpg" className="img-fluid" alt="..." />
-            <div className="card-img-overlay ">
-              <h5 className="card-title">About Us</h5>
-              <p className="card-text">
-                This is a wider card with supporting text below as a natural.
-              </p>
-              <p className="card-text">Last updated 3 mins ago</p>
-            </div>
-          </div>
-        </div> */}
-
         <h3 className="card-title card-title text-dark text-center fw-bold pt-4 ">
           About Us
         </h3>
@@ -37,7 +24,8 @@ function about() {
           repellendus minus esse dolorum fugit nesciunt.
         </p>
 
-          <Card 
+        <div className="container">
+        <Card 
           title = "History"
           />
 
@@ -48,6 +36,9 @@ function about() {
           <Card 
           title = "Our Team"
           />
+
+
+        </div>
        
 
        

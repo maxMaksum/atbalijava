@@ -12,7 +12,7 @@ import Slider from '../components/Slider';
 export const getStaticProps = async()=>{
    
   const products =  await client.product.fetchAll()
-
+  if(!products) return "no products"
   return {
     props: {
       products: JSON.parse(JSON.stringify(products)),

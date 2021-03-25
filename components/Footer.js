@@ -10,29 +10,32 @@ function Footer() {
   
     return (
       
-            <div  className="container footer__container">
+            <div className="footer__container w-100">
 
+            <div className="container ">
             { router.pathname === "/contact"? null : 
             
-            <div className="row g-4 ">
+            <div className="row g-2 container ">
 
-                <div className="col-sm-12"> <Form /> 
+                <div className="col-sm-12 p-2 "> 
+                    <Form /> 
                 </div>
 
-                <div className="col-sm-12 col-md-6 my-2 "> 
+                <div className="col-sm-12 col-md-6 p-2"> 
                 
                  <SocialMedia/> 
                 
                  </div>
-                <div className="col-sm-12 col-md-6 my-2 ">
+                <div className="col-sm-12 col-md-6 p-2">
                   <Adress /> 
                  </div>
 
-                 <div className="col-sm-12"> <Map/> 
+                 <div className="col-sm-12 p-2"> <Map/> 
                 </div>
                
             </div>
             }
+            </div>
 
             <style jsx>
                 {`
@@ -41,7 +44,7 @@ function Footer() {
                     
                     width:100%;
                     background-color:#097969;
-                    border-radius:2px
+                    border-radius:2px;
                     }
 
                

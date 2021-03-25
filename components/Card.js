@@ -26,7 +26,8 @@ function Card(props) {
             width:100%;
             object-fit:contain
           }
-          `}</style>
+          `}
+          </style>
 
       </div>
     );

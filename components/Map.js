@@ -2,8 +2,8 @@ import React from 'react'
 
 function Map() {
     return (
-        <div className="container card">
-        <h4 className="card-title text-center fw-bold p-2 ">Map OK</h4>
+        <div className="card">
+        <h4 className="card-title text-center fw-bold p-2 ">Find Us On Google Map</h4>
         <div className="col-sm-12">
           <iframe
             className="card"

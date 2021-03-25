@@ -39,10 +39,10 @@ function Form() {
     return (
         <div className="container">
 
-            <h3 className="card-title card-title text-dark text-center fw-bold pt-5 ">
+            <h3 className="card-title card-title text-white text-center fw-bold pt-5 ">
             Contact Form
             </h3>
-         <form onSubmit={handleSubmit(onSubmit)} className="">
+         <form onSubmit={handleSubmit(onSubmit)} className="text-dark">
             <div className="form-group">
             <label htmlFor="exampleInputName"> Name</label>
                 <input 
@@ -93,7 +93,7 @@ function Form() {
                 id="exampleInputEmail1" 
                 aria-describedby="emailHelp" placeholder="Enter email"/>
                {errors.email && <span className="error">{errors.email.message}</span>}
-                <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+                <small id="emailHelp" className="form-text text-light">We'll never share your email with anyone else.</small>
             </div>
 
             <div className="mb-3">
@@ -121,7 +121,7 @@ function Form() {
              <span>{errors?.message?.message}</span>
             </div>
 
-  <button type="submit" className="btn btn-primary">Submit</button>
+  <button type="submit" className="btn btn-success btn-sm">Submit</button>
 
   
 </form>
