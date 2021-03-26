@@ -55,10 +55,10 @@ function MyNavbar() {
                    
                         <Dropdown.Menu className="d-block dropdown__menu  " >
                                 <Link  href="/pants">
-                                    <a className="d-block dropdown-item pl-4 text-white btn-success  btn-small px-3  mb-2">Pants</a>
+                                    <a  className="d-block dropdown-item pl-4 text-white btn-success  btn-small px-3  mb-2">Pants</a>
                                 </Link>
                                 <Link  href="/dress">
-                                    <a className="d-block dropdown-item pl-4 text-white btn-success  btn-small px-3 ">Dress</a>
+                                    <a  className="d-block dropdown-item pl-4 text-white btn-success  btn-small px-3 ">Dress</a>
                                 </Link>
 
                       
@@ -73,10 +73,10 @@ function MyNavbar() {
                    
                         <Dropdown.Menu className="d-block dropdown__menu  " >
                                 <Link  href="/profile">
-                                    <a className="d-block dropdown-item pl-4 text-white btn-success  btn-small px-3  mb-2">Profile</a>
+                                    <a  className="d-block dropdown-item pl-4 text-white btn-success  btn-small px-3  mb-2">Profile</a>
                                 </Link>
                                 <Link  href="/team">
-                                    <a className="d-block dropdown-item pl-4 text-white btn-success  btn-small px-3 ">Our Team</a>
+                                    <a  className="d-block dropdown-item pl-4 text-white btn-success  btn-small px-3 ">Our Team</a>
                                 </Link>
 
                       
@@ -91,7 +91,7 @@ function MyNavbar() {
                      </Link >
                    
                      <Link  href="/contact">
-                        <a className="nav__menu__item  px-4 text-white ">Contact</a>
+                        <a  className="nav__menu__item  px-4 text-white ">Contact</a>
                      </Link >
                    
             </div>
@@ -127,10 +127,10 @@ function MyNavbar() {
                    
                         <Dropdown.Menu className="d-block new__menu__right ml-3" >
                                  <Link  href="/pants">
-                                    <a className="d-block dropdown-item pl-4  btn btn-sm text-white px-4 mb-2">Pants</a>
+                                    <a  onClick={handleClick} className="d-block dropdown-item pl-4  btn btn-sm text-white px-4 mb-2">Pants</a>
                                 </Link>
                                 <Link  href="/dress">
-                                    <a className="d-block dropdown-item pl-4  text-white btn btn-sm px-4">Dress</a>
+                                    <a  onClick={handleClick}className="d-block dropdown-item pl-4  text-white btn btn-sm px-4">Dress</a>
                                 </Link>
 
                     
@@ -149,21 +149,21 @@ function MyNavbar() {
                    
                         <Dropdown.Menu className="d-block new__menu__right ml-3" >
                                  <Link  href="/profile">
-                                    <a className="d-block dropdown-item pl-4  btn btn-sm text-white px-4 mb-2">Profile</a>
+                                    <a  onClick={handleClick} className="d-block dropdown-item pl-4  btn btn-sm text-white px-4 mb-2">Profile</a>
                                 </Link>
                                 <Link  href="/team">
-                                    <a className="d-block dropdown-item pl-4  text-white btn btn-sm px-4">Our Team</a>
+                                    <a  onClick={handleClick} className="d-block dropdown-item pl-4  text-white btn btn-sm px-4">Our Team</a>
                                 </Link>
 
                     
                     </Dropdown.Menu>
                 </Dropdown>
                     <Link  href="/about">
-                        <a className="nav__menu__item m-2  btn btn-outline-danger border-0 btn-sm px-4 text-white ">About Us</a>
+                        <a  onClick={handleClick}className="nav__menu__item m-2  btn btn-outline-danger border-0 btn-sm px-4 text-white ">About Us</a>
                      </Link >
                    
                      <Link  href="/contact">
-                        <a className = "nav__menu__item m-2   btn btn-outline-danger border-0 btn-sm px-4 text-white ">Contact Us</a>
+                        <a  onClick={handleClick} className = "nav__menu__item m-2   btn btn-outline-danger border-0 btn-sm px-4 text-white ">Contact Us</a>
                      </Link >
 
                    
