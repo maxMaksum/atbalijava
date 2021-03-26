@@ -16,7 +16,7 @@ function SocialMedia() {
                 </a>
               </Link>
 
-              <Link href="#">
+              <Link href="https://www.facebook.com/balijava.garmentmanufacturer">
                 <a className="text d-block">
                   <FaFacebookF size={20} />
                   <span> Facebook </span>

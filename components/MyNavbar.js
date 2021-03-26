@@ -29,7 +29,7 @@ function MyNavbar() {
                         </a>
                     </Link>
 
-                    <Link href="#">
+                    <Link href="https://www.facebook.com/balijava.garmentmanufacturer">
                         <a className="social-logo text-white mx-1 px-1"> 
                        
                             < FaFacebookF size={20} />
