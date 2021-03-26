@@ -12,12 +12,12 @@ function Footer() {
       
             <div className="footer__container w-100">
 
-            <div className="container">
+            <div className="container-fluid">
             { router.pathname === "/contact"? null : 
             
-            <div className="row g-2 container ">
+            <div className="row g-2 ">
 
-                <div className="col-sm-12 p-2 "> 
+                <div className="col-sm-12 p-2"> 
                     <Form /> 
                 </div>
 
